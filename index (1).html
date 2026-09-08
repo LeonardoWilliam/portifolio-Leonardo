@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leonardo William | Desenvolvedor de Software — Web, SaaS e IA</title>
+<meta name="description" content="Leonardo William, desenvolvedor formado em Tecnologia da Informação. Portfólio, projetos e stack em desenvolvimento web, SaaS e soluções com Inteligência Artificial.">
+
+<!--
+  DOMÍNIO — trocar em todos os lugares marcados com SEU-DOMINIO-AQUI
+  antes de publicar (canonical, Open Graph, Twitter, JSON-LD, sitemap.xml
+  e robots.txt). Isso NÃO é um domínio real, é um placeholder.
+-->
+<link rel="canonical" href="https://SEU-DOMINIO-AQUI.com.br/">
+<meta name="theme-color" content="#05070A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2305070A'/%3E%3Ctext x='16' y='21' font-family='monospace' font-weight='700' font-size='13' fill='%2322D3EE' text-anchor='middle'%3ELW%3C/text%3E%3C/svg%3E">
+<link rel="manifest" href="manifest.json">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Leonardo William | Desenvolvedor de Software — Web, SaaS e IA">
+<meta property="og:description" content="Portfólio, projetos e stack em desenvolvimento web, SaaS e soluções com Inteligência Artificial.">
+<meta property="og:url" content="https://SEU-DOMINIO-AQUI.com.br/">
+<meta property="og:image" content="https://SEU-DOMINIO-AQUI.com.br/assets/og-image.webp">
+<meta property="og:locale" content="pt_BR">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Leonardo William | Desenvolvedor de Software — Web, SaaS e IA">
+<meta name="twitter:description" content="Portfólio, projetos e stack em desenvolvimento web, SaaS e soluções com Inteligência Artificial.">
+<meta name="twitter:image" content="https://SEU-DOMINIO-AQUI.com.br/assets/og-image.webp">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "name": "Leonardo William",
+      "jobTitle": "Desenvolvedor de Software",
+      "description": "Desenvolvedor formado em Tecnologia da Informação, focado em desenvolvimento web, SaaS e soluções com Inteligência Artificial.",
+      "knowsAbout": ["JavaScript", "Java", "Python", "HTML", "CSS", "Supabase", "SaaS", "Desenvolvimento Web", "Inteligência Artificial"],
+      "url": "https://SEU-DOMINIO-AQUI.com.br/",
+      "sameAs": [
+        "https://www.linkedin.com/in/leonardo-william-6b0b19253/",
+        "https://github.com/LeonardoWilliam",
+        "https://www.instagram.com/leo_wiilliam/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "name": "Leonardo William — Portfólio",
+      "url": "https://SEU-DOMINIO-AQUI.com.br/"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Pular para o conteúdo</a>
+
+<!-- Barra de progresso de scroll -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#home" class="logo" aria-label="Leonardo William, início">
+      <span class="logo__mark">LW.</span>
+      <span class="logo__name">Leonardo William</span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Navegação principal">
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#tecnologias">Tecnologias</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#carreira">Carreira</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <a href="assets/curriculo-leonardo-william.pdf" class="btn btn--primary btn--sm nav-cta" download data-track="curriculo_click">Ver currículo</a>
+
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Fora do <header>: backdrop-filter na navbar criaria um containing block
+     para elementos position:fixed filhos, quebrando a altura deste menu. -->
+<nav class="nav-mobile" id="mobileMenu" aria-label="Navegação móvel">
+  <ul>
+    <li><a href="#home">Início</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#tecnologias">Tecnologias</a></li>
+    <li><a href="#projetos">Projetos</a></li>
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#carreira">Carreira</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+  <a href="assets/curriculo-leonardo-william.pdf" class="btn btn--primary" download data-track="curriculo_click">Ver currículo</a>
+</nav>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="grid-bg" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <div class="hero__content">
+        <p class="eyebrow eyebrow--hero">Desenvolvedor de Software</p>
+        <p class="hero__kicker">Web <span aria-hidden="true">•</span> SaaS <span aria-hidden="true">•</span> Inteligência Artificial</p>
+
+        <h1 class="hero__title">Desenvolvo produtos digitais que transformam ideias em soluções reais.</h1>
+
+        <p class="hero__subtitle">
+          Desenvolvedor com formação em Tecnologia da Informação, focado em
+          desenvolvimento web, SaaS e soluções utilizando Inteligência Artificial.
+        </p>
+
+        <div class="hero__ctas">
+          <a href="#projetos" class="btn btn--primary">Ver meus projetos</a>
+          <a href="assets/curriculo-leonardo-william.pdf" class="btn btn--ghost" download data-track="curriculo_click">Ver currículo</a>
+        </div>
+
+        <a href="https://www.linkedin.com/in/leonardo-william-6b0b19253/" class="hero__recruiter-link" target="_blank" rel="noopener noreferrer" data-track="linkedin_click">LinkedIn <span aria-hidden="true">→</span></a>
+
+        <div class="hero__meta">
+          <p class="status-pill">
+            <span class="status-dot" aria-hidden="true"></span>
+            Disponível para oportunidades
+          </p>
+          <p class="hero__location">Rio de Janeiro <span aria-hidden="true">•</span> Brasil <span aria-hidden="true">•</span> Remoto <span aria-hidden="true">•</span> Híbrido</p>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="photo-card">
+          <img
+            src="assets/leonardo-william.webp"
+            alt="Foto de Leonardo William"
+            class="photo-card__img"
+            width="360" height="440"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="photo-card__fallback" aria-hidden="true">
+            <span>LW</span>
+          </div>
+        </div>
+        <div class="photo-card__badge">
+          <span class="status-dot" aria-hidden="true"></span>
+          Disponível para oportunidades
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH BAR -->
+  <section class="tech-bar" aria-label="Ecossistema de tecnologias">
+    <div class="tech-bar__track">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Java</span>
+      <span>Python</span><span>Supabase</span><span>IA</span><span>SaaS</span>
+      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Java</span>
+      <span>Python</span><span>Supabase</span><span>IA</span><span>SaaS</span>
+    </div>
+  </section>
+
+  <!-- POSICIONAMENTO -->
+  <section class="section" id="posicionamento">
+    <div class="section__inner">
+      <p class="eyebrow" data-reveal>Foco de trabalho</p>
+      <h2 data-reveal>Desenvolvedor focado em construir produtos digitais</h2>
+      <p class="section__lead" data-reveal>
+        Trabalho com desenvolvimento web, SaaS, APIs, banco de dados, integrações,
+        automação e Inteligência Artificial aplicada ao desenvolvimento.
+      </p>
+
+      <div class="focus-tags" data-reveal>
+        <span>Desenvolvimento Web</span>
+        <span>SaaS</span>
+        <span>APIs</span>
+        <span>Banco de dados</span>
+        <span>Integrações</span>
+        <span>Inteligência Artificial</span>
+        <span>Automação</span>
+      </div>
+
+      <div class="honesty-split" data-reveal>
+        <div>
+          <h3>Conhecimentos</h3>
+          <p>Tecnologias e conceitos que estudei e utilizo para desenvolver e evoluir como desenvolvedor: Java, Python, Supabase, SaaS, APIs e ferramentas de Inteligência Artificial.</p>
+        </div>
+        <div>
+          <h3>Stack utilizada nos projetos</h3>
+          <p>Tecnologias efetivamente aplicadas nos projetos que estão no GitHub: HTML, CSS, JavaScript, React, TypeScript e Tailwind CSS.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section section--alt" id="sobre">
+    <div class="section__inner section__inner--split">
+      <div class="section__text" data-reveal>
+        <p class="eyebrow">Sobre</p>
+        <h2>Quem sou eu</h2>
+        <p>
+          Sou Leonardo William, formado em Tecnologia da Informação e interessado
+          em transformar problemas reais em soluções digitais. Meu foco está no
+          desenvolvimento de aplicações web, produtos SaaS e soluções utilizando
+          Inteligência Artificial.
+        </p>
+        <p>
+          Estou construindo minha trajetória na área com aprendizado contínuo,
+          projetos práticos e atenção a boas práticas de desenvolvimento, banco
+          de dados e organização de código.
+        </p>
+      </div>
+
+      <ol class="about-steps" data-reveal>
+        <li><span class="about-steps__num">01</span><span>Desenvolver</span></li>
+        <li><span class="about-steps__num">02</span><span>Resolver</span></li>
+        <li><span class="about-steps__num">03</span><span>Automatizar</span></li>
+        <li><span class="about-steps__num">04</span><span>Evoluir</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- TECNOLOGIAS -->
+  <section class="section" id="tecnologias">
+    <div class="section__inner">
+      <p class="eyebrow" data-reveal>Tecnologias</p>
+      <h2 data-reveal>Stack &amp; tecnologias</h2>
+
+      <div class="stack-grid" data-reveal>
+        <div class="stack-group">
+          <h3>Frontend</h3>
+          <ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        </div>
+        <div class="stack-group">
+          <h3>Backend &amp; desenvolvimento</h3>
+          <ul><li>Java</li><li>Python</li></ul>
+        </div>
+        <div class="stack-group">
+          <h3>Banco &amp; Backend as a Service</h3>
+          <ul><li>Supabase</li></ul>
+        </div>
+        <div class="stack-group">
+          <h3>Inteligência Artificial</h3>
+          <ul><li>Claude</li><li>Gemini</li><li>Lovable</li><li>Ferramentas de IA</li></ul>
+        </div>
+        <div class="stack-group">
+          <h3>Conceitos</h3>
+          <ul><li>SaaS</li><li>APIs</li><li>Integração de sistemas</li><li>Automação</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="section section--alt" id="projetos">
+    <div class="section__inner">
+      <p class="eyebrow" data-reveal>Projetos</p>
+      <h2 data-reveal>Projetos e código</h2>
+      <p class="section__lead" data-reveal>
+        Projetos disponíveis no meu <a href="https://github.com/LeonardoWilliam" target="_blank" rel="noopener noreferrer" data-track="github_click">GitHub</a>, com o problema que cada um resolve, a stack utilizada e o que aprendi construindo.
+      </p>
+
+      <div class="filter-bar" data-reveal role="group" aria-label="Filtrar projetos por tecnologia">
+        <button class="filter-btn is-active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="javascript">JavaScript</button>
+        <button class="filter-btn" data-filter="saas">SaaS</button>
+      </div>
+
+      <div class="case-grid" data-reveal>
+        <article class="case-card" data-category="web javascript">
+          <div class="case-card__media" aria-hidden="true">
+            <span class="case-card__media-label">projeto-mario</span>
+          </div>
+          <div class="case-card__body">
+            <h3>Projeto Mario</h3>
+            <p class="case-card__field"><strong>Objetivo:</strong> praticar lógica de jogo e manipulação do DOM recriando a mecânica clássica do Mario.</p>
+            <p class="case-card__field"><strong>Solução:</strong> jogo construído em JavaScript puro, sem frameworks, com controle de movimento e colisões via DOM/Canvas.</p>
+            <p class="case-card__field"><strong>Aprendizado:</strong> lógica de jogo, eventos de teclado e organização de código em JavaScript vanilla.</p>
+            <ul class="tag-list">
+              <li>JavaScript</li><li>HTML</li><li>CSS</li>
+            </ul>
+            <div class="case-card__links">
+              <a href="https://github.com/LeonardoWilliam/projeto-mario" target="_blank" rel="noopener noreferrer" data-track="github_click">GitHub <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card" data-category="web javascript">
+          <div class="case-card__media" aria-hidden="true">
+            <span class="case-card__media-label">listagem-pokemon</span>
+          </div>
+          <div class="case-card__body">
+            <h3>Listagem Pokémon</h3>
+            <p class="case-card__field"><strong>Objetivo:</strong> construir uma interface para listar e visualizar Pokémon de forma organizada.</p>
+            <p class="case-card__field"><strong>Solução:</strong> aplicação web responsiva em JavaScript, HTML e CSS, com foco em organização de dados na interface.</p>
+            <p class="case-card__field"><strong>Aprendizado:</strong> estruturação de listas dinâmicas e responsividade de layout.</p>
+            <ul class="tag-list">
+              <li>JavaScript</li><li>HTML</li><li>CSS</li>
+            </ul>
+            <div class="case-card__links">
+              <a href="https://github.com/LeonardoWilliam/listagem-pokemon" target="_blank" rel="noopener noreferrer" data-track="github_click">GitHub <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card" data-category="web saas">
+          <div class="case-card__media" aria-hidden="true">
+            <span class="case-card__media-label">fresh-home-clean</span>
+          </div>
+          <div class="case-card__body">
+            <h3>Fresh Home Clean</h3>
+            <p class="case-card__field"><strong>Objetivo:</strong> aplicação para apresentação de serviços de limpeza residencial.</p>
+            <p class="case-card__field"><strong>Solução:</strong> front-end construído com React, TypeScript e Tailwind CSS, usando componentes shadcn/ui e Vite como build tool.</p>
+            <p class="case-card__field"><strong>Aprendizado:</strong> componentização com React/TypeScript e estilização utilitária com Tailwind.</p>
+            <ul class="tag-list">
+              <li>React</li><li>TypeScript</li><li>Tailwind CSS</li>
+            </ul>
+            <div class="case-card__links">
+              <a href="https://github.com/LeonardoWilliam/fresh-home-clean-a7bb1adc" target="_blank" rel="noopener noreferrer" data-track="github_click">GitHub <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p class="filter-empty" id="filterEmpty" hidden>Nenhum projeto nessa categoria ainda.</p>
+    </div>
+  </section>
+
+  <!-- PROJETO EM DESTAQUE -->
+  <section class="section featured-project" id="destaque">
+    <div class="section__inner">
+      <p class="eyebrow" data-reveal>Projeto em destaque</p>
+      <h2 data-reveal>Fresh Home Clean</h2>
+
+      <div class="featured-project__grid" data-reveal>
+        <div class="featured-project__media" aria-hidden="true">
+          <span class="case-card__media-label">fresh-home-clean</span>
+        </div>
+        <div class="featured-project__body">
+          <p>
+            Aplicação front-end para apresentação de serviços de limpeza
+            residencial. É o projeto com a stack mais próxima do que empresas
+            usam hoje em produção — React, TypeScript e um sistema de
+            componentes reutilizáveis.
+          </p>
+
+          <h3>Arquitetura</h3>
+          <ul class="check-list">
+            <li>Vite + React + TypeScript</li>
+            <li>Componentização com shadcn/ui</li>
+            <li>Estilização utilitária com Tailwind CSS</li>
+          </ul>
+
+          <h3>Tecnologias</h3>
+          <ul class="tag-list">
+            <li>React</li><li>TypeScript</li><li>Tailwind CSS</li><li>Vite</li><li>shadcn/ui</li>
+          </ul>
+
+          <div class="case-card__links">
+            <a href="https://github.com/LeonardoWilliam/fresh-home-clean-a7bb1adc" class="btn btn--ghost" target="_blank" rel="noopener noreferrer" data-track="github_click">Ver no GitHub <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS (clientes) -->
+  <section class="section section--alt" id="servicos">
+    <div class="section__inner">
+      <p class="eyebrow" data-reveal>Para empresas e startups</p>
+      <h2 data-reveal>Transformo necessidades em soluções digitais</h2>
+
+      <div class="service-grid" data-reveal>
+        <div class="service-card">
+          <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 5h18M3 5v14h18V5M3 5l3-3h12l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Sites profissionais</h3>
+          <p>Sites rápidos, responsivos e preparados para conversão.</p>
+        </div>
+        <div class="service-card">
+          <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M3 9h18M8 4v5" stroke="currentColor" stroke-width="1.5"/></svg>
+          <h3>Aplicações Web</h3>
+          <p>Sistemas personalizados para empresas e projetos digitais.</p>
+        </div>
+        <div class="service-card">
+          <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>SaaS</h3>
+          <p>MVPs e produtos digitais para validar ideias.</p>
+        </div>
+        <div class="service-card">
+          <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M12 3v3M12 18v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M3 12h3M18 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <h3>Inteligência Artificial</h3>
+          <p>Integrações, assistentes, automações e experiências utilizando IA.</p>
+        </div>
+        <div class="service-card">
+          <svg class="service-card__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12a8 8 0 0114.9-4M20 12a8 8 0 01-14.9 4M4 4v5h5M20 20v-5h-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Automação</h3>
+          <p>Soluções para reduzir tarefas repetitivas e melhorar processos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUE MEU PERFIL -->
+  <section class="section" id="diferencial">
+    <div class="section__inner section__inner--split">
+      <div class="section__text" data-reveal>
+        <p class="eyebrow">Diferencial</p>
+        <h2>Por que meu perfil?</h2>
+        <p>
+          Não tenho anos de experiência profissional em desenvolvimento — e prefiro
+          ser direto sobre isso a inventar algo que não é verdade. O que eu tenho é
+          formação em TI, projetos reais no GitHub e disposição para aprender rápido.
+        </p>
+      </div>
+
+      <ul class="check-list check-list--cards" data-reveal>
+        <li>Formação em Tecnologia da Informação</li>
+        <li>Desenvolvimento web na prática, com projetos publicados</li>
+        <li>Interesse ativo em SaaS e arquitetura de produto</li>
+        <li>Uso de IA como ferramenta de produtividade no desenvolvimento</li>
+        <li>Aprendizado contínuo e disposição para evoluir com uma equipe</li>
+        <li>Capacidade de transformar ideias em protótipos funcionais</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section class="section section--alt" id="roadmap">
+    <div class="section__inner">
+      <p class="eyebrow" data-reveal>Trajetória</p>
+      <h2 data-reveal>Minha evolução em tecnologia</h2>
+
+      <ol class="roadmap" data-reveal>
+        <li><span>Fundamentos Web</span></li>
+        <li><span>JavaScript</span></li>
+        <li><span>Backend</span></li>
+        <li><span>SaaS</span></li>
+        <li><span>Inteligência Artificial</span></li>
+        <li><span>Desenvolvimento de produtos</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- IA COMO FERRAMENTA -->
+  <section class="section" id="ia-ferramenta">
+    <div class="section__inner section__inner--split">
+      <div class="section__text" data-reveal>
+        <p class="eyebrow">Como uso IA</p>
+        <h2>Desenvolvimento potencializado por IA</h2>
+        <p>
+          Utilizo ferramentas como Claude, Gemini e Lovable como ferramentas de
+          produtividade — para acelerar prototipação, revisar código e explorar
+          soluções mais rápido.
+        </p>
+        <p>
+          Isso não substitui entender o que o código faz: eu reviso, ajusto e
+          decido a arquitetura. A IA acelera o processo, não escreve o produto
+          sozinha.
+        </p>
+      </div>
+
+      <div class="terminal" data-reveal aria-hidden="true">
+        <div class="terminal__bar">
+          <span class="terminal__dot terminal__dot--red"></span>
+          <span class="terminal__dot terminal__dot--yellow"></span>
+          <span class="terminal__dot terminal__dot--green"></span>
+          <span class="terminal__title">workflow.js</span>
+        </div>
+        <pre class="terminal__body"><code id="typedCode"></code><span class="cursor-blink">&nbsp;</span></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARREIRA (recrutadores) -->
+  <section class="section section--recruiter" id="carreira">
+    <div class="section__inner" data-reveal>
+      <p class="eyebrow">Para recrutadores</p>
+      <h2>Estou construindo minha carreira em tecnologia</h2>
+      <p class="section__lead">
+        Busco oportunidades para atuar em desenvolvimento de software, colocando
+        em prática meus conhecimentos e evoluindo junto a equipes e produtos reais.
+      </p>
+
+      <div class="role-tags" aria-label="Cargos de interesse">
+        <span>Desenvolvedor Front-end</span>
+        <span>Desenvolvedor Web</span>
+        <span>Desenvolvedor Full Stack Júnior</span>
+        <span>Desenvolvedor Java</span>
+        <span>Desenvolvedor Python</span>
+        <span>Desenvolvedor JavaScript</span>
+        <span>Desenvolvedor em IA / Automação</span>
+      </div>
+
+      <div class="hero__ctas">
+        <a href="assets/curriculo-leonardo-william.pdf" class="btn btn--primary" download data-track="curriculo_click">Baixar currículo <span aria-hidden="true">→</span></a>
+        <a href="https://www.linkedin.com/in/leonardo-william-6b0b19253/" class="btn btn--ghost" target="_blank" rel="noopener noreferrer" data-track="linkedin_click">Ver perfil profissional <span aria-hidden="true">→</span></a>
+        <a href="https://github.com/LeonardoWilliam" class="btn btn--ghost" target="_blank" rel="noopener noreferrer" data-track="github_click">Ver GitHub <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTEÚDO TÉCNICO (placeholder de blog) -->
+  <section class="section" id="conteudo">
+    <div class="section__inner" data-reveal>
+      <p class="eyebrow">Em construção</p>
+      <h2>Conteúdo técnico</h2>
+      <p class="section__lead">
+        Espaço reservado para artigos técnicos sobre JavaScript, Python, Java,
+        SaaS, Supabase, Inteligência Artificial e desenvolvimento web. Ainda sem
+        publicações — estrutura pronta para quando os primeiros artigos saírem.
+      </p>
+      <div class="focus-tags">
+        <span>JavaScript</span><span>Python</span><span>Java</span>
+        <span>SaaS</span><span>Supabase</span><span>Inteligência Artificial</span>
+        <span>Desenvolvimento Web</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section cta-final">
+    <div class="section__inner" data-reveal>
+      <h2>Vamos construir algo?</h2>
+      <p>
+        Se você é recrutador, quero conversar sobre oportunidades. Se está
+        procurando alguém para desenvolver um projeto, também posso ajudar.
+      </p>
+      <div class="hero__ctas hero__ctas--wrap">
+        <a href="#projetos" class="btn btn--primary">Ver projetos</a>
+        <a href="https://wa.me/SEUNUMERO" class="btn btn--ghost" target="_blank" rel="noopener noreferrer" data-track="whatsapp_click">Falar comigo</a>
+        <a href="https://www.linkedin.com/in/leonardo-william-6b0b19253/" class="btn btn--ghost" target="_blank" rel="noopener noreferrer" data-track="linkedin_click">LinkedIn</a>
+        <a href="https://github.com/LeonardoWilliam" class="btn btn--ghost" target="_blank" rel="noopener noreferrer" data-track="github_click">GitHub</a>
+        <a href="assets/curriculo-leonardo-william.pdf" class="btn btn--ghost" download data-track="curriculo_click">Baixar currículo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section section--alt" id="contato">
+    <div class="section__inner section__inner--narrow">
+      <p class="eyebrow" data-reveal>Contato</p>
+      <h2 data-reveal>Vamos conversar sobre seu próximo projeto.</h2>
+
+      <!--
+        CONTATO — COMO FUNCIONA HOJE
+        Este site é estático, sem backend. Ao enviar, o formulário abre o
+        cliente de e-mail do visitante (mailto:) com os dados preenchidos —
+        NÃO simula um envio que não aconteceu. Ele também confirma como
+        alternativa o link do WhatsApp logo abaixo.
+
+        Para trocar por um envio de verdade (sem o visitante precisar abrir
+        o próprio e-mail), plugue um dos serviços abaixo em handleSubmit()
+        no script.js:
+
+        OPÇÃO 1 — Formspree: https://formspree.io
+        OPÇÃO 2 — EmailJS: https://www.emailjs.com
+        OPÇÃO 3 — Supabase (tabela + Edge Function)
+
+        Troque o e-mail "SEU-EMAIL-AQUI@dominio.com" no script.js pelo seu
+        e-mail real antes de publicar.
+      -->
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" autocomplete="name" required>
+          <span class="form-error" id="nameError" role="alert"></span>
+        </div>
+
+        <div class="form-row">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+          <span class="form-error" id="emailError" role="alert"></span>
+        </div>
+
+        <div class="form-row">
+          <label for="company">Empresa <span class="form-optional">(opcional)</span></label>
+          <input type="text" id="company" name="company" autocomplete="organization">
+        </div>
+
+        <div class="form-row">
+          <label for="subject">Assunto</label>
+          <input type="text" id="subject" name="subject" required>
+          <span class="form-error" id="subjectError" role="alert"></span>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <span class="form-error" id="messageError" role="alert"></span>
+        </div>
+
+        <button type="submit" class="btn btn--primary">Enviar mensagem <span aria-hidden="true">→</span></button>
+
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+
+        <p class="form-alt">
+          Prefere direto? <a href="https://wa.me/SEUNUMERO" target="_blank" rel="noopener noreferrer" data-track="whatsapp_click">Fale comigo no WhatsApp</a>
+        </p>
+
+        <p class="form-privacy">
+          Os dados enviados por este formulário são usados apenas para
+          responder seu contato — nenhuma informação é compartilhada com
+          terceiros. <a href="privacidade.html">Política de Privacidade</a>.
+        </p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span class="logo__mark">LW.</span>
+      <p>Leonardo William</p>
+      <p class="footer__tagline">Desenvolvedor de Software</p>
+      <p class="footer__tagline">Web • SaaS • IA</p>
+      <p class="footer__tagline">Rio de Janeiro • Brasil</p>
+    </div>
+
+    <nav class="footer__links" aria-label="Links de contato e redes">
+      <a href="https://github.com/LeonardoWilliam" target="_blank" rel="noopener noreferrer" data-track="github_click">GitHub</a>
+      <a href="https://www.linkedin.com/in/leonardo-william-6b0b19253/" target="_blank" rel="noopener noreferrer" data-track="linkedin_click">LinkedIn</a>
+      <a href="https://www.instagram.com/leo_wiilliam/" target="_blank" rel="noopener noreferrer" class="footer__links--muted">Instagram</a>
+      <a href="mailto:SEU-EMAIL-AQUI@dominio.com">E-mail</a>
+      <a href="https://wa.me/SEUNUMERO" target="_blank" rel="noopener noreferrer" data-track="whatsapp_click">WhatsApp</a>
+      <a href="assets/curriculo-leonardo-william.pdf" download data-track="curriculo_click">Currículo</a>
+    </nav>
+  </div>
+  <p class="footer__copy">© 2026 Leonardo William. Todos os direitos reservados. · <a href="privacidade.html">Política de Privacidade</a></p>
+</footer>
+
+<a href="https://wa.me/SEUNUMERO" class="whatsapp-fab" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp" data-track="whatsapp_click">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="26" height="26"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.7.8-.8 1-.2.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.2.2-.4.1-.1 0-.3 0-.4 0-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2 1 2.4c.1.2 1.6 2.5 4 3.5.6.2 1 .4 1.3.5.5.2 1 .1 1.4.1.4-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.4-.3z"/></svg>
+</a>
+
+<script src="script.js" defer></script>
+</body>
+</html>
