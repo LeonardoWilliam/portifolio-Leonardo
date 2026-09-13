@@ -1,7 +1,31 @@
-# Leonardo William — Portfólio (v2, foco em carreira em TI)
+# Leonardo William — Portfólio (v3, dados reais do currículo)
 
 Site estático em HTML5 + CSS3 + JavaScript vanilla — sem frameworks, sem
 build step. Basta abrir `index.html` no navegador.
+
+## O que mudou nesta versão
+
+- **Foto real** aplicada (`assets/leonardo-william.webp`, recortada a partir
+  da foto enviada).
+- **Currículo real em PDF** gerado a partir do `.docx` enviado —
+  `assets/curriculo-leonardo-william.pdf` já funciona de verdade.
+- **WhatsApp e e-mail reais** em todos os lugares: footer, CTA final,
+  contato, botão flutuante e no `mailto:` do formulário
+  (`(21) 95920-8821` / `leonardowillian898@gmail.com`).
+- **Conteúdo alinhado ao currículo real**: Hero, Sobre, Tecnologias,
+  Diferencial e Carreira reescritos para refletir a transição de carreira
+  (3 anos em vendas na MV Motors → front-end).
+- **Nova seção "Experiência & Educação"**, com a MV Motors, a Estácio de Sá
+  e o curso da Microlins.
+- **Projetos trocados pelos 3 reais do currículo**: Casa Nova Fácil, Casa
+  Limpa e Fresca (fresh-home-clean) e Primeiro Site — confirmei no GitHub
+  que "Casa Limpa e Fresca" é o mesmo projeto Vite + React + TypeScript +
+  Tailwind + shadcn/ui de antes, só que a URL correta do repositório é sem
+  o sufixo `-a7bb1adc`.
+- **Ilustração original em SVG** no Projeto em Destaque (casa + vassoura +
+  brilhos), no lugar do placeholder abstrato — sem usar banco de imagens.
+- **Imagem OG gerada** com a foto real, para like/preview ao compartilhar o
+  link (`assets/og-image.webp`).
 
 ## Como rodar
 
@@ -83,14 +107,14 @@ python3 -m http.server 8000
 
 Estas são as únicas coisas que impedem o site de ir para produção hoje:
 
-| O quê | Onde | O que acontece se não trocar |
+| O quê | Onde | Status |
 |---|---|---|
-| **Domínio** | Busque `SEU-DOMINIO-AQUI` em `index.html`, `robots.txt`, `sitemap.xml`, `privacidade.html` | SEO aponta para um domínio que não existe |
-| **Número do WhatsApp** | Busque `SEUNUMERO` em `index.html` (CTA final, contato, footer, botão flutuante) | Link do WhatsApp não abre conversa nenhuma |
-| **E-mail de contato** | Busque `SEU-EMAIL-AQUI@dominio.com` em `index.html` (footer) e `script.js` (`CONTACT_EMAIL`) | O `mailto:` do formulário vai para um e-mail que não existe |
-| **Foto profissional** | `assets/leonardo-william.webp` | Nada quebra — aparece um placeholder com "LW" no lugar (testado) |
-| **Currículo em PDF** | `assets/curriculo-leonardo-william.pdf` | O botão gera um 404 ao clicar, mas não quebra a página |
-| **OG image** | `assets/og-image.webp` (1200×630px sugerido) | O link, ao ser compartilhado, aparece sem imagem de preview |
+| **Domínio** | Busque `SEU-DOMINIO-AQUI` em `index.html`, `robots.txt`, `sitemap.xml`, `privacidade.html` | ⚠️ Ainda é um placeholder — SEO aponta para um domínio que não existe até você trocar |
+| Número do WhatsApp | `(21) 95920-8821` | ✅ Já é o real, em todos os lugares |
+| E-mail de contato | `leonardowillian898@gmail.com` | ✅ Já é o real, em todos os lugares |
+| Foto profissional | `assets/leonardo-william.webp` | ✅ Já é a foto real enviada |
+| Currículo em PDF | `assets/curriculo-leonardo-william.pdf` | ✅ Já é o PDF real, gerado a partir do seu .docx |
+| OG image | `assets/og-image.webp` | ✅ Já gerada com sua foto |
 
 ## 5. Como publicar
 
@@ -125,3 +149,12 @@ Estas são as únicas coisas que impedem o site de ir para produção hoje:
 - `prefers-reduced-motion` respeitado (todas as 33 animações de reveal)
 - Navegação por teclado com foco visível
 - Sem chaves, segredos ou credenciais no código
+
+## Testado em (responsividade)
+
+Larguras: 280 (Galaxy Fold fechado), 320, 360, 375, 390, 430, 600, 768, 820,
+1024, 1180, 1280, 1366, 1440, 1920, 2560, 3840px — sem overflow horizontal em
+nenhuma. Também testado: rotação de retrato para paisagem no celular, toque
+real (tap, não só clique de mouse) no menu e nos filtros de projeto, e
+tamanho de alvos de toque (menu, botões e filtros ajustados para no mínimo
+44×44px, o padrão recomendado para dedos em telas touch).
